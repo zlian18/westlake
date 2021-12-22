@@ -2,9 +2,10 @@ body {
     font-family: 'Alegreya', serif;
 }
 
+
 /* Top Navbar */
 #logo {
-    max-width: 8rem;
+    max-width: 6rem;
     margin-left: 1em;
 }
 
@@ -26,8 +27,7 @@ body {
 #MenuTypeContainer {
     margin: auto;
     padding-top: 1.1em;
-    border-bottom: 1px solid lightgrey; 
-    width: 90%;
+
 }
 
 .MenuTypeList {
@@ -55,12 +55,21 @@ body {
 }
 
 /* Lists of different dishes */
+/* .dishesTopHr {
+    width: 75%;
+    margin: auto;
+} */
+
 #dishesContainer {
     text-align: center;
 }
 
 .MenuTitle {
+    border-bottom: 3px double;
     font-size: 2em;
+    width: 8rem;;
+    margin: auto;
+    margin-bottom: 0.7rem;
     font-weight: 1000;
 }
 
@@ -97,6 +106,15 @@ body {
     text-align: right;
 }
 
+.dishColor1 {
+    background-color: #d1e0d783;
+}
+
+.dishColor2 {
+    background-color: #f7fafa;
+    /* background-color: #ecbaa8; */
+}
+
 /* Media */
 @media screen and (max-width: 767px) {
     #logo {
@@ -115,6 +133,7 @@ body {
         width: 0vw;
         text-align: left;
         margin-right: 1.5em;
+        padding-right: 0;
     }
 
     
@@ -149,6 +168,7 @@ body {
         font-size: 0.9em;
         text-align: left;
         margin-right: 1.5em;
+        padding-right: 0;
     }
     .MenuTitle {
         font-size: 1.5em;
