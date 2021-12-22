@@ -1,5 +1,5 @@
 body {
-    font-family: cursive, sans-serif;
+    font-family: 'Alegreya', serif;
 }
 
 /* Top Navbar */
@@ -10,6 +10,7 @@ body {
 
 .navbar {
     background-color: #fffcf2;
+    font-family: 'Cabin Condensed', sans-serif;
 }
 
 .nav-item {
@@ -59,36 +60,30 @@ body {
 }
 
 .MenuTitle {
-    margin-top: 0.7em;
     font-size: 2em;
     font-weight: 1000;
-}
-
-.dishList {
-    border-top: 1px solid lightgrey;
-    width: 70%;
 }
 
 .left .dishDetails {
     display: flex;
     text-align: left; 
     justify-content: end;
-    margin-right: 5vw;
+    margin-right: 2vw;
 }
 
 .right .dishDetails {
     display: flex;
     text-align: left; 
     justify-content: start;
-    margin-left: 5vw;
+    margin-left: 2vw;
 }
 
-.dishName {
-    font-weight: bold;
+.dishName{
+    font-size: 1.2em;
 }
 
 .dishName, .dishNameOption {
-    width: 20vw;
+    width: 30vw;
     /* margin-left: 10vw; */
 }
 
@@ -102,14 +97,29 @@ body {
     text-align: right;
 }
 
-
 /* Media */
 @media screen and (max-width: 767px) {
     #logo {
         width: 5rem;
     }
+    .left .dishDetails, .right .dishDetails {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .dishName {
+        width: 70vw;
+    }
+    .dishPrice {
+        width: 0vw;
+        text-align: left;
+        margin-right: 1.5em;
+    }
 
+    
 }
+
 @media screen and (max-width: 575px) {
     #logo {
         width: 3rem;
@@ -122,5 +132,25 @@ body {
         margin: 0 0.2em 0.3em 0.2em;
         padding: 0.3em;
         font-size: 0.8em;
+    }
+
+    .left .dishDetails, .right .dishDetails {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .dishName {
+        width: 70vw;
+        font-size: 0.9em;
+    }
+    .dishPrice {
+        width: 0vw;
+        font-size: 0.9em;
+        text-align: left;
+        margin-right: 1.5em;
+    }
+    .MenuTitle {
+        font-size: 1.5em;
     }
 }
