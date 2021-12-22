@@ -2,7 +2,6 @@ body {
     font-family: 'Alegreya', serif;
 }
 
-
 /* Top Navbar */
 #logo {
     max-width: 6rem;
@@ -27,7 +26,6 @@ body {
 #MenuTypeContainer {
     margin: auto;
     padding-top: 1.1em;
-
 }
 
 .MenuTypeList {
@@ -67,24 +65,16 @@ body {
 .MenuTitle {
     border-bottom: 3px double;
     font-size: 2em;
-    width: 8rem;;
+    width: 20rem;;
     margin: auto;
     margin-bottom: 0.7rem;
     font-weight: 1000;
 }
 
-.left .dishDetails {
+.left .dishDetails, .right .dishDetails  {
     display: flex;
     text-align: left; 
-    justify-content: end;
-    margin-right: 2vw;
-}
-
-.right .dishDetails {
-    display: flex;
-    text-align: left; 
-    justify-content: start;
-    margin-left: 2vw;
+    justify-content: center;
 }
 
 .dishName{
@@ -93,7 +83,7 @@ body {
 
 .dishName, .dishNameOption {
     width: 30vw;
-    /* margin-left: 10vw; */
+    margin-bottom: 0;
 }
 
 .dishNameOption {
@@ -102,7 +92,8 @@ body {
 }
 
 .dishPrice {
-    width: 4vw;
+    width: 10vw;
+    margin-right: 0;
     text-align: right;
 }
 
@@ -120,23 +111,25 @@ body {
     #logo {
         width: 5rem;
     }
-    .left .dishDetails, .right .dishDetails {
+    .MenuTitle {
+        width: 15rem;;
+    }
+    .left .dishDetails, .right .dishDetails  {
         display: flex;
+        text-align: left; 
         justify-content: center;
-        margin-right: 0;
-        margin-left: 0;
     }
     .dishName {
         width: 70vw;
     }
     .dishPrice {
-        width: 0vw;
-        text-align: left;
-        margin-right: 1.5em;
-        padding-right: 0;
+        font-size: 0.9em;
     }
-
-    
+    .dishNameOption {
+        width: 70vw;
+        padding-left: 2em;
+        font-size: 0.95em;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -147,28 +140,23 @@ body {
         font-size: 1em;
         padding-right: 0em;
     }
+    .MenuTitle {
+        width: 10rem;;
+    }
     .MenuType {
         margin: 0 0.2em 0.3em 0.2em;
         padding: 0.3em;
         font-size: 0.8em;
-    }
-
-    .left .dishDetails, .right .dishDetails {
-        display: flex;
-        justify-content: center;
-        margin-right: 0;
-        margin-left: 0;
     }
     .dishName {
         width: 70vw;
         font-size: 0.9em;
     }
     .dishPrice {
-        width: 0vw;
         font-size: 0.9em;
-        text-align: left;
-        margin-right: 1.5em;
-        padding-right: 0;
+    }
+    .dishNameOption {
+        font-size: 0.75em;
     }
     .MenuTitle {
         font-size: 1.5em;
