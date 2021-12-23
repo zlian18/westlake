@@ -41,61 +41,62 @@
             </div>
         </nav>
 
-        <div id="MenuTypeContainer">
-            <ul class="MenuTypeList">
-                <li class="MenuType">FAMILY MEAL</li>
-                <li class="MenuType">SOUP</li>
-                <li class="MenuType">ENTREE</li>
-                <li class="MenuType">CHICKEN</li>
-                <li class="MenuType">BEEF</li>
-                <li class="MenuType">PORK</li>
-                <li class="MenuType">LAMB DISHES</li>
-                <li class="MenuType">PRAWNS</li>
-                <li class="MenuType">SCALLOPS</li>
-                <li class="MenuType">CALAMARI</li>
-                <li class="MenuType">FISH</li>
-                <li class="MenuType">DUCK</li>
-                <li class="MenuType">OMELETTES</li>
-                <li class="MenuType">RICE</li>
-                <li class="MenuType">SPECIAL DISHES</li>
-                <li class="MenuType">NOODLES</li>
+        <div id="dishTypeContainer">
+            <ul id="dishTypeList">
+                <li class="dishType" onclick="scrol(1)">FAMILY MEAL</li>
+                <li class="dishType" onclick="scrol(2)">SOUP</li>
+                <li class="dishType" onclick="scrol(3)">ENTREE</li>
+                <li class="dishType" onclick="scrol(4)">CHICKEN</li>
+                <li class="dishType" onclick="scrol(5)">BEEF</li>
+                <li class="dishType" onclick="scrol(6)">PORK</li>
+                <li class="dishType" onclick="scrol(7)">LAMB DISHES</li>
+                <li class="dishType" onclick="scrol(9)">PRAWNS</li>
+                <li class="dishType" onclick="scrol(9)">SCALLOPS</li>
+                <li class="dishType" onclick="scrol(10)">CALAMARI</li>
+                <li class="dishType" onclick="scrol(11)">FISH</li>
+                <li class="dishType" onclick="scrol(12)">DUCK</li>
+                <li class="dishType" onclick="scrol(13)">OMELETTES</li>
+                <li class="dishType" onclick="scrol(14)">RICE</li>
+                <li class="dishType" onclick="scrol(15)">SPECIAL DISHES</li>
+                <li class="dishType" onclick="scrol(16)">NOODLES</li>
             </ul>
         </div>
     </div>
 
     <section class="container-fluid px-0" id="dishesContainer">
         <hr class="dishesTopHr">
-        <div class="dishColor2">
-            <div class="MenuTitle menu1 pt-md-3">Family Meal</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <h2>Family Pack 1</h2>
-                    <ul>
-                        <li>6 Spring Rolls</li>
-                        <li>Sweet & Sour Pork</li>
-                        <li>Curried Prawns on Rice</li>
-                        <li>Satay Chicken on Rice</li>
-                        <li>Large Fried Rice</li>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu1 pt-md-3">Family Meal</div>
+            <div class="row familyDishesList">
+                <div class="col-sm-6 left">
+                    <h4>Family Pack 1</h4>
+                    <ul class="familyDetails">
+                        <li class="familyDish">6 Spring Rolls</li>
+                        <li class="familyDish">Sweet & Sour Pork</li>
+                        <li class="familyDish">Curried Prawns on Rice</li>
+                        <li class="familyDish">Satay Chicken on Rice</li>
+                        <li class="familyDish">Large Fried Rice</li>
+                        <h1 class="familyDishLast">$48</h1>
                     </ul>
-                    <h1>$48</h1>
                 </div>
-                <div class="col-md-6 right">
-                    <h2>Family Pack 2</h2>
-                    <ul>
-                        <li>8 Spring Rolls</li>
-                        <li>Sweet & Sour Pork</li>
-                        <li>Honey Chicken</li>
-                        <li>Curried Seafood on Rice</li>
-                        <li>Satay Beef on Rice</li>
-                        <li>Combination Fried Rice</li>
+                <div class="col-sm-6 right">
+                    <h4>Family Pack 2</h4>
+                    <ul class="familyDetails">
+                        <li class="familyDish">8 Spring Rolls</li>
+                        <li class="familyDish">Sweet & Sour Pork</li>
+                        <li class="familyDish">Honey Chicken</li>
+                        <li class="familyDish">Curried Seafood on Rice</li>
+                        <li class="familyDish">Satay Beef on Rice</li>
+                        <li class="familyDish">Combination Fried Rice</li>
+                        <h1>$70</h1>
                     </ul>
-                    <h1>$70</h1>
+
                 </div>
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu2 pt-md-3">Soup</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu2 pt-md-3">Soup</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -132,8 +133,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu3 pt-md-3">Entree</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu3 pt-md-3">Entree</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -178,8 +179,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu4 pt-md-3">Chicken</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu4 pt-md-3">Chicken</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -240,8 +241,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu5 pt-md-3">Beef</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu5 pt-md-3">Beef</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -306,8 +307,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu6 pt-md-3">Pork</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu6 pt-md-3">Pork</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -332,8 +333,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu7 pt-md-3">Lamb Dishes</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu7 pt-md-3">Lamb Dishes</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -354,8 +355,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu8 pt-md-3">Prawns</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu8 pt-md-3">Prawns</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -408,8 +409,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu9 pt-md-3">Scallops</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu9 pt-md-3">Scallops</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -442,8 +443,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu10 pt-md-3">Calamari</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu10 pt-md-3">Calamari</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -468,8 +469,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu11 pt-md-3">Fish</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu11 pt-md-3">Fish</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -498,8 +499,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu12 pt-md-3">Duck</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu12 pt-md-3">Duck</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -524,8 +525,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu13 pt-md-3">Omelettes</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu13 pt-md-3">Omelettes</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -550,8 +551,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu14 pt-md-3">Rice</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu14 pt-md-3">Rice</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -580,8 +581,8 @@
             </div>
         </div>
 
-        <div class="dishColor1">
-            <div class="MenuTitle menu15 pt-md-3">Special Dishes</div>
+        <div class="dishColor1 pb-md-2">
+            <div class="dishTypeTitle menu15 pt-md-3">Special Dishes</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -610,8 +611,8 @@
             </div>
         </div>
 
-        <div class="dishColor2">
-            <div class="MenuTitle menu16 pt-md-3">Noodles</div>
+        <div class="dishColor2 pb-md-2">
+            <div class="dishTypeTitle menu16 pt-md-3">Noodles</div>
             <div class="row">
                 <div class="col-md-6 left">
                     <div class="dishDetails">
@@ -691,23 +692,22 @@
 
     <footer>
         <div class="row">
-            <div class="col-md-3">
-                <div>About Westlake</div>
-                <p>This is about weslake</p>
+            <div class="col-sm-3">
+                <div class="footerTitle">About Westlake</div>
+                <p>Fully licensed Chinese Seafood Restaurant. We are the oldest chinese restaurant in Toowoomba who first opened in 1979. Our menu have over 100 dishes and there's certainly something just right for you!</p>
             </div>
-            <div class="col-md-3">
-                <div>Our Location</div>
-                <p>stree address</p>
+            <div class="col-sm-3">
+                <div class="footerTitle">Our Location</div>
+                <p>127-129 Anzac Avenue Toowoomba</p>
             </div>
-            <div class="col-md-3">
-                <div>Navigation</div>
-                <ul>
-                    <li>About us</li>
-                    <li>Contacts</li>
-                </ul>
+            <div class="col-sm-3">
+                <div class="footerTitle">Navigation</div>
+                <li>About us</li>
+                <li>Menu</li>
+                <li>Contacts</li>
             </div>
-            <div class="col-md-3">
-                <div>logo</div>
+            <div class="col-sm-3">
+                <img id="logoFooter" src="logo.png" alt="westlake logo">
             </div>
         </div>
     </footer>
