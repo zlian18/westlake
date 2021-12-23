@@ -26,13 +26,15 @@ body {
 #MenuTypeContainer {
     margin: auto;
     padding-top: 1.1em;
+    background-color: #f7fafa;
 }
-
 .MenuTypeList {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 1em;
 }
 
 .MenuType {
@@ -53,10 +55,10 @@ body {
 }
 
 /* Lists of different dishes */
-/* .dishesTopHr {
+.dishesTopHr {
     width: 75%;
     margin: auto;
-} */
+}
 
 #dishesContainer {
     text-align: center;
@@ -119,14 +121,10 @@ body {
         text-align: left; 
         justify-content: center;
     }
-    .dishName {
+    .dishName, .dishNameOption {
         width: 70vw;
-    }
-    .dishPrice {
-        font-size: 0.9em;
     }
     .dishNameOption {
-        width: 70vw;
         padding-left: 2em;
         font-size: 0.95em;
     }
@@ -148,12 +146,11 @@ body {
         padding: 0.3em;
         font-size: 0.8em;
     }
-    .dishName {
-        width: 70vw;
+    .dishPrice, .dishName {
         font-size: 0.9em;
     }
-    .dishPrice {
-        font-size: 0.9em;
+    .dishName {
+        width: 70vw;
     }
     .dishNameOption {
         font-size: 0.75em;
