@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    
     font-family: 'Alegreya', serif;
 }
 li {
@@ -22,6 +23,13 @@ li {
 }
 #navbarSupportedContent {
     text-align: center;
+}
+.pageTitle {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
 }
 
 /* Dish Type List */
@@ -219,3 +227,5 @@ footer li, footer p {
         font-size: 1.5em;
     } 
 }
+
+/*-----MAP----*/

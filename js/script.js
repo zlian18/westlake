@@ -101,3 +101,13 @@ function scrol(n) {
         }, 0);
     });
 }
+
+
+
+window.onload=function(){
+    var mymap = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+        }).addTo(mymap);
+    }
