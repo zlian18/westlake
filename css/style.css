@@ -1,7 +1,6 @@
-body {
+html, body {
     padding: 0;
     margin: 0;
-    
     font-family: 'Alegreya', serif;
 }
 li {
@@ -29,7 +28,7 @@ li {
     width: 50%;
     text-align: center;
     font-size: 2em;
-    margin-top: 1em;
+    margin-top: 4vh;
 }
 
 /* Dish Type List */
@@ -162,6 +161,10 @@ footer li, footer p {
 #logoFooter {
     max-width: 6rem;
 }
+.footer-nav-link {
+    text-decoration: none;
+    color:rgba(230, 224, 224, 0.801);
+}
 
 /* Media */
 @media screen and (max-width: 767px) {
@@ -226,6 +229,9 @@ footer li, footer p {
     h1 {
         font-size: 1.5em;
     } 
+    
+    /*-----MAP----*/
+    .pageTitle {
+        font-size: 1.em;
+    }
 }
-
-/*-----MAP----*/

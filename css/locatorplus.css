@@ -3,17 +3,16 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  
 }
 
 #map-container {
-  width: 50%;
+  width: 55%;
   height: 50%;
-  margin: auto;
-  margin-top: 3em;
+  margin: 3em auto;
   position: relative;
-
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 #map-container button {
@@ -46,6 +45,20 @@ body {
   box-sizing: border-box;
 }
 
+.phone {
+  font-size: 0.985em;
+}
+.open-hours {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1em 2em 1em 1.4em;
+  font-size: 0.9em;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 876px) {
   #map {
     left: 0;
@@ -56,6 +69,15 @@ body {
     top: 50%;
     right: 0;
     width: unset;
+  }
+
+  #map-container{
+    width: 95%;
+    height: 100%;
+  }
+
+  .open-hours {
+    padding-right: 0;
   }
 }
 
@@ -88,10 +110,12 @@ body {
   box-sizing: border-box;
   padding: 0 2.5em 0 1em;
   font-size: 1em;
+  display: none;
 }
 
 #locations-panel-list .search-input-overlay {
   position: absolute;
+  display: none;
 }
 
 #locations-panel-list .search-input-overlay.search {
