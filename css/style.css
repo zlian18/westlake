@@ -23,12 +23,16 @@ li {
 #navbarSupportedContent {
     text-align: center;
 }
-.pageTitle {
+.pageTitle, .pageTitle1 {
     margin: auto;
     width: 50%;
     text-align: center;
     font-size: 2em;
     margin-top: 4vh;
+    border-bottom: 1px double lightgrey;
+}
+.pageTitle1 {
+    width: 30%;
 }
 
 /* Dish Type List */
@@ -165,6 +169,45 @@ footer li, footer p {
     text-decoration: none;
     color:rgba(230, 224, 224, 0.801);
 }
+.footer-nav-link:hover {
+    color:rgba(255, 255, 255, 0.801); 
+}
+
+
+/*----Info-----*/
+#info-container {
+    align-items: center;
+    margin: 0 20vw;
+}
+.info-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 4vh auto 10vh;
+}
+
+.info-text, .info-image {
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+}
+.info-text {
+    line-height: 2em;
+    width: 70%;
+    color:rgb(92, 92, 92);
+}
+.info-text:nth-of-type(1) {
+    text-align: right;
+    padding-right:2vw;
+}
+
+.info-text:nth-of-type(2) {
+    text-align: left;
+    padding-left:2vw;
+}
+
+.info-image img {
+    width: 100%;
+}
 
 /* Media */
 @media screen and (max-width: 767px) {
@@ -230,8 +273,25 @@ footer li, footer p {
         font-size: 1.5em;
     } 
     
-    /*-----MAP----*/
-    .pageTitle {
-        font-size: 1.em;
+    /*-----MAP/Info----*/
+    .pageTitle, .pageTitle1 {
+        font-size: 1.3em;
+        width: 60%;
+        margin-top: 0.5em;
+    }
+    .info-row {
+        display: block;
+    }
+    #info-container {
+        margin: 0;
+    }
+    .info-image {
+        width: 60vw;
+    }
+    .info-text:nth-last-of-type(1), .info-text:nth-last-of-type(2) {
+        text-align: center;
+    }
+    .info-text {
+        font-size: 0.9em;
     }
 }
