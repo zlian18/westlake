@@ -3,27 +3,31 @@ html, body {
     margin: 0;
     font-family: 'Alegreya', serif;
 }
+
 li {
     list-style-type: none;
 }
 
-/* Top Navbar */
 #logo {
     max-width: 6rem;
     margin-left: 1em;
 }
+
 .navbar {
     background-color: #fffcf2;
     font-family: 'Cabin Condensed', sans-serif;
 }
+
 .nav-item {
     font-size: 1.25em;
     padding-right: 1em;
 }
+
 #navbarSupportedContent {
     text-align: center;
 }
-.pageTitle, .pageTitle1 {
+
+.info-page-title, .location-page-title {
     margin: auto;
     width: 50%;
     text-align: center;
@@ -31,17 +35,19 @@ li {
     margin-top: 4vh;
     border-bottom: 1px double lightgrey;
 }
-.pageTitle1 {
+
+.location-page-title {
     width: 30%;
 }
 
 /* Dish Type List */
-#dishTypeContainer {
+#dish-type-container {
     margin: auto;
     padding-top: 1.1em;
     background-color: #f7fafa;
 }
-#dishTypeList {
+
+#dish-type-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,7 +55,8 @@ li {
     margin-bottom: 0;
     padding-bottom: 1em;
 }
-.dishType {
+
+.dish-type {
     list-style-type: none;
     padding: 0.4em;
     margin: 0.6rem;
@@ -63,9 +70,7 @@ li {
     transition: all 0.3s ease;
 }
 
-.dishType:hover
-/* , #dishTypeList .active */
-{
+.dish-type:hover{
     cursor: pointer;
     color: white;
     background: #e28743;
@@ -73,30 +78,36 @@ li {
 }
 
 /* Lists of different dishes */
-.dishesTopHr {
+.dishes-top-hr {
     width: 75%;
     margin: auto;
 }
-#dishesContainer {
+
+#dishes-container {
     text-align: center;
 }
-.familyDetails {
+
+.family-details {
     padding-left: 0;
 }
-.familyDishLast {
+
+.family-dish-last {
     padding-top: 0.6em;
 }
-.familyDishesList {
+
+.family-dishes-list {
     justify-content: center;
 }
-.familyDishesList .left, .familyDishesList .right {
+
+.family-dishes-list .left, .family-dishes-list .right {
     width: 13em;
     background-color: #d3eeee;
     border-radius: 2em;
     padding-top: 1em;
     margin: 0.5em 5.5em;;
 }
-.dishTypeTitle {
+
+.dish-type-title {
     border-bottom: 3px double;
     font-size: 2em;
     width: 20rem;;
@@ -105,40 +116,49 @@ li {
     font-weight: 1000;
     text-transform: uppercase;
 }
- .right .dishDetails  {
+
+ .right .dish-details  {
     display: flex;
     text-align: left; 
     justify-content: left;
 }
-.left .dishDetails {
+
+.left .dish-details {
     display: flex;
     text-align: left; 
     justify-content: right;
 }
-.dishName{
+
+.dish-name{
     font-size: 1.2em;
     margin-left: 2em;
 }
-.dishName {
+
+.dish-name {
     width: 20em;
 }
-.dishNameOption {
+
+.dish-name-option {
     width: 23.8em;
     margin-left: 2.5em;
 }
-.dishNameOption {
+
+.dish-name-option {
     padding-left: 2.3vw;
     font-style: italic;
 }
-.dishPrice {
+
+.dish-price {
     width: 2em;
     margin-right: 2em;
     text-align: right;
 }
-.dishColor1 {
+
+.dish-color1 {
     background-color: #d1e0d783;
 }
-.dishColor2 {
+
+.dish-color2 {
     background-color: #f7fafa;
     /* background-color: #ecbaa8; */
 }
@@ -152,33 +172,39 @@ footer {
     justify-content: center;
     padding: 4em;
 }
+
 footer .row {
     max-width: 60em;
 }
-.footerTitle {
+
+.footer-title {
     font-size: 1.2em;
     padding-bottom: 1em;
 }
+
 footer li, footer p {
     color: rgba(230, 224, 224, 0.801);
 }
-#logoFooter {
+
+#logo-footer {
     max-width: 6rem;
 }
+
 .footer-nav-link {
     text-decoration: none;
     color:rgba(230, 224, 224, 0.801);
 }
+
 .footer-nav-link:hover {
     color:rgba(255, 255, 255, 0.801); 
 }
-
 
 /*----Info-----*/
 #info-container {
     align-items: center;
     margin: 0 20vw;
 }
+
 .info-row {
     display: flex;
     justify-content: space-around;
@@ -190,11 +216,13 @@ footer li, footer p {
     margin: auto;
     text-align: center;
 }
+
 .info-text {
     line-height: 2em;
     width: 70%;
     color:rgb(92, 92, 92);
 }
+
 .info-text:nth-of-type(1) {
     text-align: right;
     padding-right:2vw;
@@ -209,88 +237,111 @@ footer li, footer p {
     width: 100%;
 }
 
+
 /* Media */
 @media screen and (max-width: 767px) {
     #logo {
         width: 5rem;
     }
-    .dishTypeTitle {
+
+    .dish-type-title {
         width: 15rem;;
     }
-    .left .dishDetails, .right .dishDetails  {
+
+    .left .dish-details, .right .dish-details  {
         display: flex;
         text-align: left; 
         justify-content: center;
     }
-    .dishName, .dishNameOption {
+
+    .dish-name, .dish-name-option {
         width: 70vw;
     }
-    .dishNameOption {
+
+    .dish-name-option {
         padding-left: 2em;
         font-size: 0.95em;
     }
-    .familyDishesList .left, .familyDishesList .right {
+
+    .family-dishes-list .left, .family-dishes-list .right {
         margin: 0.5em 2.5em;
     }
 }
+
 @media screen and (max-width: 575px) {
     #logo {
         width: 3rem;
     }
+
     .nav-item {
         font-size: 1em;
     }
-    .dishTypeTitle {
+
+    .dish-type-title {
         width: 10rem;;
     }
-    .dishType {
+
+    .dish-type {
         margin: 0 0.3em 0.3em 0.3em;
         padding: 0.3em;
         font-size: 0.8em;
     }
-    .dishPrice, .dishName {
+
+    .dish-price, .dish-name {
         font-size: 0.9em;
     }
-    .dishName {
+
+    .dish-name {
         width: 70vw;
     }
-    .dishNameOption {
+
+    .dish-name-option {
         font-size: 0.75em;
     }
-    .dishTypeTitle {
+
+    .dish-type-title {
         font-size: 1.5em;
     }
-    .familyDishesList {
+
+    .family-dishes-list {
         font-size: 0.8em;
     }
-    .familyDishesList .left, .familyDishesList .right {
+
+    .family-dishes-list .left, .family-dishes-list .right {
         margin: 0.2em 0.3em;;
     }
+
     h4 {
         font-size: 1.3em;
     }
+
     h1 {
         font-size: 1.5em;
     } 
     
     /*-----MAP/Info----*/
-    .pageTitle, .pageTitle1 {
+    .info-page-title, .location-page-title {
         font-size: 1.3em;
         width: 60%;
         margin-top: 0.5em;
     }
+
     .info-row {
         display: block;
     }
+
     #info-container {
         margin: 0;
     }
+
     .info-image {
         width: 60vw;
     }
+
     .info-text:nth-last-of-type(1), .info-text:nth-last-of-type(2) {
         text-align: center;
     }
+
     .info-text {
         font-size: 0.9em;
     }
