@@ -4,18 +4,37 @@ html, body {
     font-family: 'Alegreya', serif;
 }
 
+section {
+    overflow: hidden;
+}
+
+.logo-text {
+    max-width: 150px;
+    margin-right: auto;
+}
+
+.logo-text h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: red;
+    font-weight: 900;
+    transform: scale(1, 1.3);
+}
+
+.logo-text p {
+    font-size: smaller;
+    margin-bottom: 0;
+}
+
 li {
     list-style-type: none;
 }
 
 #logo {
     max-width: 6rem;
-    margin-left: 1em;
 }
 
 .navbar {
     background-color: #fffcf2;
-    font-family: 'Cabin Condensed', sans-serif;
 }
 
 .nav-item {
@@ -44,7 +63,7 @@ li {
 #dish-type-container {
     margin: auto;
     padding-top: 1.1em;
-    background-color: #f7fafa;
+    background-color: #fff;
 }
 
 #dish-type-list {
@@ -101,7 +120,7 @@ li {
 
 .family-dishes-list .left, .family-dishes-list .right {
     width: 13em;
-    background-color: #d3eeee;
+    background-color: #d1e0d783;
     border-radius: 2em;
     padding-top: 1em;
     margin: 0.5em 5.5em;;
@@ -154,13 +173,8 @@ li {
     text-align: right;
 }
 
-.dish-color1 {
-    background-color: #d1e0d783;
-}
-
 .dish-color2 {
-    background-color: #f7fafa;
-    /* background-color: #ecbaa8; */
+    background-color: #fff;
 }
 
 /* Footer */
@@ -212,7 +226,7 @@ footer li, footer p {
 }
 
 .info-text, .info-image {
-    width: 40vw;
+    width: 50em;
     margin: auto;
     text-align: center;
 }
@@ -237,11 +251,22 @@ footer li, footer p {
     width: 100%;
 }
 
+.price-change {
+    color:rgb(155, 147, 147);
+}
 
 /* Media */
 @media screen and (max-width: 767px) {
     #logo {
         width: 5rem;
+    }
+
+    .logo-text h2 {
+        font-size: 1.3em
+    }
+    
+    .logo-text p {
+        font-size: 0.7em;
     }
 
     .dish-type-title {
@@ -273,8 +298,24 @@ footer li, footer p {
         width: 3rem;
     }
 
+    .logo-text {
+        max-width: 100px;
+        margin-right: auto;
+    }
+    
+    .logo-text h2 {
+        font-size: 1em
+    }
+    
+    .logo-text p {
+        font-size: 0.5em;
+    }
     .nav-item {
         font-size: 1em;
+    }
+
+    #dish-type-container {
+        padding-top: 0;
     }
 
     .dish-type-title {
@@ -282,7 +323,7 @@ footer li, footer p {
     }
 
     .dish-type {
-        margin: 0 0.3em 0.3em 0.3em;
+        margin: 0 0.3em 1em 0.3em;
         padding: 0.3em;
         font-size: 0.8em;
     }
