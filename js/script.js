@@ -1,3 +1,4 @@
+// Remove .html when upload to repo
 class Myheader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
