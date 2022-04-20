@@ -4,7 +4,7 @@ class Myheader extends HTMLElement {
     this.innerHTML = `
         <nav class="navbar navbar-expand-sm p-0 navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index"><img id="logo" src="img/logo.png" alt="Westlake logo"></a>
+                <a class="navbar-brand" href="index.html"><img id="logo" src="img/logo.png" alt="Westlake logo"></a>
                 <div class="logo-text">
                     <h2>Westlake</h2>
                     <p>Fully Licensed Chinese Seafood Restaurant</p>
@@ -18,13 +18,13 @@ class Myheader extends HTMLElement {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-lg-0">
                         <li class="nav-item p-0">
-                            <a class="nav-link active" aria-current="page" href="index">Menu</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
                         </li>
                         <li class="nav-item p-0">
-                            <a class="nav-link active" aria-current="page" href="info">Restaurant Info</a>
+                            <a class="nav-link active" aria-current="page" href="info.html">About</a>
                         </li>
                         <li class="nav-item p-0">
-                            <a class="nav-link active" aria-current="page" href="location">Location</a>
+                            <a class="nav-link active" aria-current="page" href="location.html">Location</a>
                         </li>
                     </ul>
                 </div>
@@ -53,9 +53,9 @@ class Myfooter extends HTMLElement {
                 </div>
                 <div class="col-sm-3">
                     <div class="footer-title">Navigation</div>
-                    <li><a class="footer-nav-link" href="info">About us</a></li>
-                    <li><a class="footer-nav-link" href="index">Menu</a></li>
-                    <li><a class="footer-nav-link" href="location">Map</a></li>
+                    <li><a class="footer-nav-link" href="info.html">About us</a></li>
+                    <li><a class="footer-nav-link" href="index.html">Menu</a></li>
+                    <li><a class="footer-nav-link" href="location.html">Map</a></li>
                 </div>
                 <div class="col-sm-3">
                     <img id="logo-footer" src="img/logo.png" alt="westlake logo">
@@ -68,27 +68,12 @@ class Myfooter extends HTMLElement {
 customElements.define("my-footer", Myfooter);
 
 // Move to different menu section after nav barbutton click
-const height = document.querySelector("#menu-fixed").offsetHeight;
-
-for (let i = 1; i <= 16; i++) {
-  $(`.dish-type:nth-of-type(${i})`).click(function () {
-    $("html,body").animate(
-      {
-        scrollTop: $(`.menu${i}`).offset().top - height,
-      },
-      0
-    );
-  });
-}
-
 function scrol(n) {
   const height = document.querySelector("#menu-fixed").offsetHeight;
-  $(".dish-type:nth-of-type(n)").click(function () {
-    $("html,body").animate(
-      {
-        scrollTop: $(".menu" + n).offset().top - height - 0.5,
-      },
-      0
-    );
-  });
+  $("html,body").animate(
+    {
+      scrollTop: $(".menu" + n).offset().top - height,
+    },
+    0
+  );
 }

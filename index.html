@@ -1,686 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Westlake | Menu</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Open+Sans:wght@300;800&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Caveat:wght@600&family=Open+Sans:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
+  <body>
     <div id="menu-fixed" class="sticky-top overflow-hidden">
-        <my-header></my-header>
-        <div id="dish-type-container">
-            <div class="d-flex justify-content-center">
-                <img src="img/phone.png" width="30px" height="30px" alt="" />
-                <h4 class="ms-2">(07) 4634 7188</h4>
-            </div>
-            <ul id="dish-type-list">
-                <button class="dish-type" onclick="scrol(1)">FAMILY MEAL</li>
-                <button class="dish-type" onclick="scrol(2)">SOUP</button>
-                <button class="dish-type" onclick="scrol(3)">ENTREE</button>
-                <button class="dish-type" onclick="scrol(4)">CHICKEN</button>
-                <button class="dish-type" onclick="scrol(5)">BEEF</button>
-                <button class="dish-type" onclick="scrol(6)">PORK</button>
-                <button class="dish-type" onclick="scrol(7)">LAMB DISHES</button>
-                <button class="dish-type" onclick="scrol(8)">PRAWNS</button>
-                <button class="dish-type" onclick="scrol(9)">SCALLOPS</button>
-                <button class="dish-type" onclick="scrol(10)">CALAMARI</button>
-                <button class="dish-type" onclick="scrol(11)">FISH</button>
-                <button class="dish-type" onclick="scrol(12)">DUCK</button>
-                <button class="dish-type" onclick="scrol(13)">OMELETTES</button>
-                <button class="dish-type" onclick="scrol(14)">RICE</button>
-                <button class="dish-type" onclick="scrol(15)">SPECIAL DISHES</button>
-                <button class="dish-type" onclick="scrol(16)">NOODLES</button>
-            </ul>
+      <my-header></my-header>
+      <div id="dish-type-container">
+        <div class="d-flex justify-content-center">
+          <img
+            src="img/phone.png"
+            width="30px"
+            height="30px"
+            alt="phone icon"
+          />
+          <h4 class="ms-2">(07) 4634 7188</h4>
         </div>
+        <ul id="dish-type-list">
+          <button class="dish-type-button" onclick="scrol(1)">
+            FAMILY MEAL
+          </button>
+          <button class="dish-type-button" onclick="scrol(2)">SOUP</button>
+          <button class="dish-type-button" onclick="scrol(3)">ENTREE</button>
+          <button class="dish-type-button" onclick="scrol(4)">CHICKEN</button>
+          <button class="dish-type-button" onclick="scrol(5)">BEEF</button>
+          <button class="dish-type-button" onclick="scrol(6)">PORK</button>
+          <button class="dish-type-button" onclick="scrol(7)">LAMB DISHES</button>
+          <button class="dish-type-button" onclick="scrol(8)">PRAWNS</button>
+          <button class="dish-type-button" onclick="scrol(9)">SCALLOPS</button>
+          <button class="dish-type-button" onclick="scrol(10)">CALAMARI</button>
+          <button class="dish-type-button" onclick="scrol(11)">FISH</button>
+          <button class="dish-type-button" onclick="scrol(12)">DUCK</button>
+          <button class="dish-type-button" onclick="scrol(13)">OMELETTES</button>
+          <button class="dish-type-button" onclick="scrol(14)">RICE</button>
+          <button class="dish-type-button" onclick="scrol(15)">SPECIAL DISHES</button>
+          <button class="dish-type-button" onclick="scrol(16)">NOODLES</button>
+        </ul>
+      </div>
     </div>
 
-    <hr class="dishes-top-hr" />
+    <div class="menu-background">Our Menu</div>
 
     <section class="container-fluid px-0" id="dishes-container">
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu1 pt-md-3">Family Meal</div>
-            <div class="row family-dishes-list">
-                <div class="col-md-6 left">
-                    <h4>Family Pack 1</h4>
-                    <ul class="family-details">
-                        <li class="familyDish">6 Spring Rolls</li>
-                        <li class="familyDish">Sweet & Sour Pork</li>
-                        <li class="familyDish">Curried Prawns on Rice</li>
-                        <li class="familyDish">Satay Chicken on Rice</li>
-                        <li class="familyDish">Large Fried Rice</li>
-                        <li style="opacity: 0;">Hide</li> 
-                        <h1>$48</h1>
-                    </ul>
-                </div>
-                <div class="col-md-6 right">
-                    <h4>Family Pack 2</h4>
-                    <ul class="family-details">
-                        <li class="familyDish">8 Spring Rolls</li>
-                        <li class="familyDish">Sweet & Sour Pork</li>
-                        <li class="familyDish">Honey Chicken</li>
-                        <li class="familyDish">Curried Seafood on Rice</li>
-                        <li class="familyDish">Satay Beef on Rice</li>
-                        <li class="familyDish">Combination Fried Rice</li>
-                        <h1>$70</h1>
-                    </ul>
-                </div>
-            </div>
+      <div class="dish-type-title menu1 pt-md-3">Family Meal</div>
+      <div class="family-dishes">
+        <div class="dish d-flex justify-content-center">
+          <div class="dish-name family-dish-name">Family Pack 1</div>
+          <div class="dish-price family-dish-price">48</div>
         </div>
+        <p class="family-dish-detail mb-2">
+          6 Spring Rolls, Sweet & Sour Pork, Curried Prawns on Rice, Satay
+          Chicken on Rice, Large Fried Rice
+        </p>
+        <div class="dish d-flex justify-content-center">
+          <div class="dish-name family-dish-name">Family Pack 2</div>
+          <div class="dish-price family-dish-price">70</div>
+        </div>
+        <p class="family-dish-detail">
+          8 Spring Rolls, Sweet & Sour Pork, Honey Chicken, Curried Seafood on
+          Rice, Satay Beef on Rice, Combination Fried Rice
+        </p>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu2 pt-md-3">Soup</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">1. Long Soup</p>
-                        <p class="dish-price">6.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">2. Short Soup</p>
-                        <p class="dish-price">6.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">3. Chicken & Sweet Corn Soup</p>
-                        <p class="dish-price">6.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">4. Combination Soup</p>
-                        <p class="dish-price">6.50</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">5. Crab Meat & Sweet Corn Soup</p>
-                        <p class="dish-price">7.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">6. Combination Short Soup</p>
-                        <p class="dish-price">9.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">7. Combination Long Soup</p>
-                        <p class="dish-price">9.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu2">
+        <div class="dish-type-title menu2 pt-md-3">Soup</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">1. Long Soup</div>
+              <div class="dish-price">6.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">2. Short Soup</div>
+              <div class="dish-price">6.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">3. Chicken & Sweet Corn Soup</div>
+              <div class="dish-price">6.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">4. Combination Soup</div>
+              <div class="dish-price">6.50</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">5. Crab Meat & Sweet Corn Soup</div>
+              <div class="dish-price">7.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">6. Combination Short Soup</div>
+              <div class="dish-price">9.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">7. Combination Long Soup</div>
+              <div class="dish-price">9.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu3 pt-md-3">Entree</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">8. Prawn Chips</p>
-                        <p class="dish-price">4.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">9. Mini Spring Rolls (4 Pack)</p>
-                        <p class="dish-price">6.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">10. Dim Sims (4 Pack)</p>
-                        <p class="dish-price">7.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">11. Curry Vegetable Puffs (4 Pack)</p>
-                        <p class="dish-price">7.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">12. Chicken & Ham Rolls (4 Pack)</p>
-                        <p class="dish-price">7.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">13. Prawn Cocktail</p>
-                        <p class="dish-price">9.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">14 Sesame Prawns (4 Pack)</p>
-                        <p class="dish-price">9.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">15. King Prawn Cutlets (4 Pack)</p>
-                        <p class="dish-price">9.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">16. Sang Choi Bow</p>
-                        <p class="dish-price">14.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu3">
+        <div class="dish-type-title pt-md-3">Entree</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">8. Prawn Chips</div>
+              <div class="dish-price">4.50</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">9. Mini Spring Rolls (4 Pack)</div>
+              <div class="dish-price">6.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">10. Dim Sims (4 Pack)</div>
+              <div class="dish-price">7.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">11. Curry Vegetable Puffs (4 Pack)</div>
+              <div class="dish-price">7.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">12. Chicken &amp; Ham Rolls (4 Pack)</div>
+              <div class="dish-price">7.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">13. Prawn Cocktail</div>
+              <div class="dish-price">9.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">14 Sesame Prawns (4 Pack)</div>
+              <div class="dish-price">9.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">15. King Prawn Cutlets (4 Pack)</div>
+              <div class="dish-price">9.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">16. Sang Choi Bow</div>
+              <div class="dish-price">14.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu4 pt-md-3">Chicken</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">17. Curried Chicken on Rice</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">18. Braised Chicken with Oyster Sauce</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">19. Braised Chicken with Vegetables</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">20. Sweet & Sour Chicken</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">21. Satay Chicken</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">22. Chilli Chicken</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">23. Mongolian Chicken</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">24. Chicken with (Almonds or Cashews)</p>
-                        <p class="dish-price">13.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">25. Honey Chicken</p>
-                        <p class="dish-price">13.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">26. Lemon Chicken</p>
-                        <p class="dish-price">13.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">27. Chicken Chow Mein</p>
-                        <p class="dish-price">14.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">28. Chicken Fillet (Chinese Style)</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">29. Fried Crispy Skin Chicken on Rice</p>
-                        <p class="dish-price">14.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu4">
+        <div class="dish-type-title pt-md-3">Chicken</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">17. Curried Chicken on Rice</div>
+              <div class="dish-price">13.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">18. Braised Chicken with Oyster Sauce</div>
+              <div class="dish-price">13.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">19. Braised Chicken with Vegetables</div>
+              <div class="dish-price">13.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">20. Sweet & Sour Chicken</div>
+              <div class="dish-price">13.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">21. Satay Chicken</div>
+              <div class="dish-price">13.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">22. Chilli Chicken</div>
+              <div class="dish-price">13.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">23. Mongolian Chicken</div>
+              <div class="dish-price">13.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">24. Chicken with (Almonds or Cashews)</div>
+              <div class="dish-price">13.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">25. Honey Chicken</div>
+              <div class="dish-price">13.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">26. Lemon Chicken</div>
+              <div class="dish-price">13.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">27. Chicken Chow Mein</div>
+              <div class="dish-price">14.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">28. Chicken Fillet (Chinese Style)</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">29. Fried Crispy Skin Chicken on Rice</div>
+              <div class="dish-price">14.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu5 pt-md-3">Beef</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">30. Beef Chow Mein</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">31. Curred Beef on Rice</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">32. Beef with Oyster Sauce</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">33. Beef with Vegetables</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">34. Beef with Black Bean Sauce</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">35. Rainbow Steak</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">36. Beef & Plum Sauce</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">37. Mongolian Beef</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">38. Chilli Beef</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">39. Beef with (Almonds or Cashews)</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">40. Satay Beef</p>
-                        <p class="dish-price">14.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">41. Fillet Steak (Chinese Style)</p>
-                        <p class="dish-price">18.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">42. Fillet Steak with Mushrooms</p>
-                        <p class="dish-price">18.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">43. Fillet Steak & Pepper Sauce</p>
-                        <p class="dish-price">18.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu5">
+        <div class="dish-type-title pt-md-3">Beef</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">30. Beef Chow Mein</div>
+              <div class="dish-price">14.50</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">31. Curred Beef on Rice</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">32. Beef with Oyster Sauce</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">33. Beef with Vegetables</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">34. Beef with Black Bean Sauce</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">35. Rainbow Steak</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">36. Beef & Plum Sauce</div>
+              <div class="dish-price">14.50</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">37. Mongolian Beef</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">38. Chilli Beef</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">39. Beef with (Almonds or Cashews)</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">40. Satay Beef</div>
+              <div class="dish-price">14.50</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">41. Fillet Steak (Chinese Style)</div>
+              <div class="dish-price">18.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">42. Fillet Steak with Mushrooms</div>
+              <div class="dish-price">18.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">43. Fillet Steak & Pepper Sauce</div>
+              <div class="dish-price">18.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu6 pt-md-3">Pork</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">44. Sweet & Sour Pork</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">45. BBQ Pork with Plum Sauce</p>
-                        <p class="dish-price">14.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">46. BBQ Pork Rib (Boneless)</p>
-                        <p class="dish-price">14.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">47. BBQ Pork Rib (Bone in)</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu6">
+        <div class="dish-type-title pt-md-3">Pork</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">44. Sweet & Sour Pork</div>
+              <div class="dish-price">13.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">45. BBQ Pork with Plum Sauce</div>
+              <div class="dish-price">14.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">46. BBQ Pork Rib (Boneless)</div>
+              <div class="dish-price">14.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">47. BBQ Pork Rib (Bone in)</div>
+              <div class="dish-price">13.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu7 pt-md-3">Lamb Dishes</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">48. Mongolian Lamb</p>
-                        <p class="dish-price">16.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">49. Satay Lamb</p>
-                        <p class="dish-price">16.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">50. Curried Lamb</p>
-                        <p class="dish-price">16.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu7">
+        <div class="dish-type-title pt-md-3">Lamb Dishes</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">48. Mongolian Lamb</div>
+              <div class="dish-price">16.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">49. Satay Lamb</div>
+              <div class="dish-price">16.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">50. Curried Lamb</div>
+              <div class="dish-price">16.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu8 pt-md-3">Prawns</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">51. Prawn Chow Mein</p>
-                        <p class="dish-price">14.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">52. Curried Prawns on Rice</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">53. King Prawn with Oyster Sauce</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">54. Satay King Prawns</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">55. King Prawn with (Almonds or Cashews)</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">56. Honey King Prawns</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">57. Garlic King Prawns</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">58. Mongolian King Prawns</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">59. Chilli King Prawns</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">60. King Prawns with Salt & Pepper</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">61. King Prawns with Ginger & Shallots</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu8">
+        <div class="dish-type-title menu8 pt-md-3">Prawns</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">51. Prawn Chow Mein</div>
+              <div class="dish-price">14.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">52. Curried Prawns on Rice</div>
+              <div class="dish-price">13.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">53. King Prawn with Oyster Sauce</div>
+              <div class="dish-price">20.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">54. Satay King Prawns</div>
+              <div class="dish-price">20.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">
+                55. King Prawn with (Almonds or Cashews)
+              </div>
+              <div class="dish-price">20.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">56. Honey King Prawns</div>
+              <div class="dish-price">20.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">57. Garlic King Prawns</div>
+              <div class="dish-price">20.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">58. Mongolian King Prawns</div>
+              <div class="dish-price">20.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">59. Chilli King Prawns</div>
+              <div class="dish-price">20.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">60. King Prawns with Salt & Pepper</div>
+              <div class="dish-price">21.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">
+                61. King Prawns with Ginger & Shallots
+              </div>
+              <div class="dish-price">21.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu9 pt-md-3">Scallops</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">62. Curried Scallops</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">63. Scollops with Garlic Sauce</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">64. Sweet & Sour Scallops</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">65. Scallops in Ginger & Shallots</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">66. Scallops with (Almonds or Cashews)</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">67. Satay Scallops</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu9">
+        <div class="dish-type-title menu9 pt-md-3">Scallops</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">62. Curried Scallops</div>
+              <div class="dish-price">21.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">63. Scollops with Garlic Sauce</div>
+              <div class="dish-price">21.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">64. Sweet & Sour Scallops</div>
+              <div class="dish-price">21.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">65. Scallops in Ginger & Shallots</div>
+              <div class="dish-price">21.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">
+                66. Scallops with (Almonds or Cashews)
+              </div>
+              <div class="dish-price">21.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">67. Satay Scallops</div>
+              <div class="dish-price">21.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu10 pt-md-3">Calamari</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">68. Calamari in Ginger & Shallots</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">69. Calamari with Salt & Pepper</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">70. Curried Calamari</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">71. Satay Calamari</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu10">
+        <div class="dish-type-title pt-md-3">Calamari</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">68. Calamari in Ginger & Shallots</div>
+              <div class="dish-price">17.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">69. Calamari with Salt & Pepper</div>
+              <div class="dish-price">17.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">70. Curried Calamari</div>
+              <div class="dish-price">17.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">71. Satay Calamari</div>
+              <div class="dish-price">17.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu11 pt-md-3">Fish</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">72. Fish with Salt & Pepper</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">73. Sweet & Sour Fish</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">74. Fish with Lemon Sauce</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">75. Fish with Oyster Sauce</p>
-                        <p class="dish-price">17.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">76. Fish with Ginger & Shallots</p>
-                        <p class="dish-price">18.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu11">
+        <div class="dish-type-title menu11 pt-md-3">Fish</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">72. Fish with Salt & Pepper</div>
+              <div class="dish-price">17.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">73. Sweet & Sour Fish</div>
+              <div class="dish-price">17.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">74. Fish with Lemon Sauce</div>
+              <div class="dish-price">17.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">75. Fish with Oyster Sauce</div>
+              <div class="dish-price">17.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">76. Fish with Ginger & Shallots</div>
+              <div class="dish-price">18.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu12 pt-md-3">Duck</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">77. Sweet & Sour Duck</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">78. Steamed Duck with Oyster Sauce</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">79. Garlic Duck</p>
-                        <p class="dish-price">21.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">80. BBQ Duck</p>
-                        <p class="dish-price">23.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu12">
+        <div class="dish-type-title menu12 pt-md-3">Duck</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">77. Sweet & Sour Duck</div>
+              <div class="dish-price">21.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">78. Steamed Duck with Oyster Sauce</div>
+              <div class="dish-price">21.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">79. Garlic Duck</div>
+              <div class="dish-price">21.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">80. BBQ Duck</div>
+              <div class="dish-price">23.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu13 pt-md-3">Omelettes</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">81. Vegetarian Omelette</p>
-                        <p class="dish-price">13.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">82. Chicken Omelette</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">83. Prawn Omelette</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">84. Combination Omelette</p>
-                        <p class="dish-price">16.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu13">
+        <div class="dish-type-title pt-md-3">Omelettes</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">81. Vegetarian Omelette</div>
+              <div class="dish-price">13.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">82. Chicken Omelette</div>
+              <div class="dish-price">15.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">83. Prawn Omelette</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">84. Combination Omelette</div>
+              <div class="dish-price">16.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu14 pt-md-3">Rice</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">85. Large Boiled Rice</p>
-                        <p class="dish-price">4.50</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">86. Small Fried Rice</p>
-                        <p class="dish-price">6.90</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">87. Large Fried Rice</p>
-                        <p class="dish-price">8.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">88. Vegetarian Fried Rice</p>
-                        <p class="dish-price">8.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">89. Combination Fried Rice</p>
-                        <p class="dish-price">9.50</p>
-                    </div>
-                </div>
+      <div class="dishes menu14">
+        <div class="dish-type-title pt-md-3">Rice</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">85. Large Boiled Rice</div>
+              <div class="dish-price">4.50</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">86. Small Fried Rice</div>
+              <div class="dish-price">6.90</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">87. Large Fried Rice</div>
+              <div class="dish-price">8.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">88. Vegetarian Fried Rice</div>
+              <div class="dish-price">8.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">89. Combination Fried Rice</div>
+              <div class="dish-price">9.50</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color1 pb-md-2">
-            <div class="dish-type-title menu15 pt-md-3">Special Dishes</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">90. Mixed Vegetables</p>
-                        <p class="dish-price">12.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">91. Westlake Combination</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">92. Sweet & Sour Combination</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">93. Satay Combination</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">94. Seafood Combination</p>
-                        <p class="dish-price">20.00</p>
-                    </div>
-                </div>
+      <div class="dishes menu15">
+        <div class="dish-type-title menu15 pt-md-3">Special Dishes</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">90. Mixed Vegetables</div>
+              <div class="dish-price">12.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">91. Westlake Combination</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">92. Sweet & Sour Combination</div>
+              <div class="dish-price">15.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">93. Satay Combination</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">94. Seafood Combination</div>
+              <div class="dish-price">20.00</div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="dish-color2 pb-md-2">
-            <div class="dish-type-title menu16 pt-md-3">Noodles</div>
-            <div class="row">
-                <div class="col-md-6 left">
-                    <div class="dish-details">
-                        <p class="dish-name">95. Curried Chicken Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">96. Curried Beef Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">97. Satay Chicken Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">98. Satay Beef Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">99. Combination Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">100. Beef with Black Bean Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">101. Mongolian Lamb Egg Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">102. Singapore Noodles</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">103. Curried King Prawn Egg Noodles</p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                </div>
-                <div class="col-md-6 right">
-                    <div class="dish-details">
-                        <p class="dish-name">104. Satay King Prawn Egg Noodles</p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">105. Curried Seafood Combination Noodles</p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">106. Seafood Combination Egg Noodles</p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">107. King Prawns Garlic Egg Noodles</p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">108. Satay Seafood Combination Noodles</p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name">109. Laksa or Tom Yum Noodle Soup</p>
-                        <p class="dish-price"></p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name-option">Chicken or Beef</p>
-                        <p class="dish-price">15.00</p>
-                    </div>
-                    <div class="dish-details">
-                        <p class="dish-name-option">
-                            King Prawn or Scollop or Combination Seafood
-                        </p>
-                        <p class="dish-price">22.00</p>
-                    </div>
-                </div>
-                <p class="price-change"><i>All price subject to change</i></p>
+      <div class="dishes menu16">
+        <div class="dish-type-title menu16 pt-md-3">Noodles</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">95. Curried Chicken Egg Noodles</div>
+              <div class="dish-price">15.00</div>
             </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">96. Curried Beef Egg Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">97. Satay Chicken Egg Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">98. Satay Beef Egg Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">99. Combination Egg Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">100. Beef with Black Bean Egg Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">101. Mongolian Lamb Egg Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">102. Singapore Noodles</div>
+              <div class="dish-price">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">103. Curried King Prawn Egg Noodles</div>
+              <div class="dish-price">22.00</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">104. Satay King Prawn Egg Noodles</div>
+              <div class="dish-price">22.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">
+                105. Curried Seafood Combination Noodles
+              </div>
+              <div class="dish-price">22.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">106. Seafood Combination Egg Noodles</div>
+              <div class="dish-price">22.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">107. King Prawns Garlic Egg Noodles</div>
+              <div class="dish-price">22.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">
+                108. Satay Seafood Combination Noodles
+              </div>
+              <div class="dish-price">22.00</div>
+            </div>
+            <div class="dish d-flex justify-content-center">
+              <div class="dish-name">109. Laksa or Tom Yum Noodle Soup</div>
+              <div class="dish-price"></div>
+            </div>
+            <div class="dish d-flex justify-content-end">
+              <div class="dish-name-option">Chicken or Beef</div>
+              <div class="dish-price dish-price-option">15.00</div>
+            </div>
+            <div class="dish d-flex justify-content-end">
+              <div class="dish-name-option">
+                King Prawn or Scollop or Combination Seafood
+              </div>
+              <div class="dish-price dish-price-option">22.00</div>
+            </div>
+          </div>
+          <p class="price-change"><i>All price subject to change</i></p>
         </div>
+      </div>
     </section>
-    
+
     <my-footer></my-footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

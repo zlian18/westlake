@@ -1,0 +1,154 @@
+.menu-background {
+  background-image: url('../img/menu_background.jpg');
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 4em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dish Type List */
+#dish-type-container {
+  margin: auto;
+  padding-top: 1.1em;
+  background-color: #fff;
+}
+
+#dish-type-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
+.dish-type-button {
+  list-style-type: none;
+  padding: 0.4em;
+  margin: 0.6rem;
+  margin-bottom: 0.2em;
+  font-size: 0.92em;
+  font-weight: 1000;
+  color: rgb(110, 110, 110);
+  border: 1px;
+  border-radius: 1em;
+  background-color: #ffd19a;
+  transition: all 0.3s ease;
+}
+
+.dish-type-button:hover {
+  cursor: pointer;
+  color: white;
+  background: #e28743;
+  box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
+}
+
+/* Lists of different dishes */
+#dishes-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.dish-type-title {
+  font-family: 'Caveat', cursive;
+  color: #e28743;
+  border-bottom: 3px double;
+  font-size: 3em;
+  max-width: 20rem;
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 0.7rem;
+  font-weight: 1000;
+}
+
+.family-dishes {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vh 2em;
+  max-width: 50em;
+}
+
+.dishes {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vh 2em;
+  max-width: 65em;
+}
+
+.dish {
+  margin-bottom: 1vh;
+}
+
+.dish-name {
+  font-size: 1.2em;
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 0.5em;
+  flex: 1;
+  display: flex;
+  text-align: left;
+}
+
+.dish-name:after {
+  content: '';
+  border-bottom: 2px dashed #e5e5e5;
+  margin: 0 0 10px 4px;
+  flex: 1;
+}
+
+.dish-price {
+  text-align: right;
+}
+
+.dish-name-option {
+  padding-right: 1vw;
+  font-style: italic;
+  text-align: right;
+}
+
+.family-dish-name,
+.family-dish-price {
+  color: #e28743;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 575px) {
+  #dish-type-container {
+    padding-top: 5px;
+  }
+
+  .dish-name {
+    width: 70vw;
+  }
+
+  .dish-type-title {
+    font-size: 2em;
+  }
+
+  .dish-type-button {
+    font-size: 80%;
+  }
+
+  .dish-price,
+  .dish-name {
+    font-size: 90%;
+  }
+
+  .family-dish-name {
+    font-size: 1em;
+  }
+
+  .dish-name-option,
+  .dish-price-option,
+  .family-dish-detail {
+    font-size: 0.8em;
+  }
+}
